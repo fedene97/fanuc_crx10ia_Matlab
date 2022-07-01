@@ -41,11 +41,6 @@
         <mesh filename="meshes/crx10ial/collision/base_link.stl"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="4.0"/>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <inertia ixx="0.00443333156" ixy="0.0" ixz="0.0" iyy="0.00443333156" iyz="0.0" izz="0.0072"/>
-    </inertial>
   </link>
   <joint name="shoulder_pan_joint" type="revolute">
     <parent link="base_link"/>
@@ -69,11 +64,6 @@
         <mesh filename="meshes/crx10ial/collision/link_1.stl"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="3.7"/>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <inertia ixx="0.010267495893" ixy="0.0" ixz="0.0" iyy="0.010267495893" iyz="0.0" izz="0.00666"/>
-    </inertial>
   </link>
   <joint name="shoulder_lift_joint" type="revolute">
     <parent link="shoulder_link"/>
@@ -97,11 +87,6 @@
         <mesh filename="meshes/crx10ial/collision/link_2.stl"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="8.393"/>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <inertia ixx="0.22689067591" ixy="0.0" ixz="0.0" iyy="0.22689067591" iyz="0.0" izz="0.0151074"/>
-    </inertial>
   </link>
   <joint name="elbow_joint" type="revolute">
     <parent link="upper_arm_link"/>
@@ -125,11 +110,6 @@
         <mesh filename="meshes/crx10ial/collision/link_3.stl"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="2.275"/>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <inertia ixx="0.049443313556" ixy="0.0" ixz="0.0" iyy="0.049443313556" iyz="0.0" izz="0.004095"/>
-    </inertial>
   </link>
   <joint name="wrist_1_joint" type="revolute">
     <parent link="forearm_link"/>
@@ -153,11 +133,6 @@
         <mesh filename="meshes/crx10ial/collision/link_4.stl"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="1.219"/>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <inertia ixx="0.111172755531" ixy="0.0" ixz="0.0" iyy="0.111172755531" iyz="0.0" izz="0.21942"/>
-    </inertial>
   </link>
   <joint name="wrist_2_joint" type="revolute">
     <parent link="wrist_1_link"/>
@@ -181,11 +156,6 @@
         <mesh filename="meshes/crx10ial/collision/link_5.stl"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="1.219"/>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <inertia ixx="0.111172755531" ixy="0.0" ixz="0.0" iyy="0.111172755531" iyz="0.0" izz="0.21942"/>
-    </inertial>
   </link>
   <joint name="wrist_3_joint" type="revolute">
     <parent link="wrist_2_link"/>
@@ -209,11 +179,6 @@
         <mesh filename="meshes/crx10ial/collision/link_6.stl"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="0.1879"/>
-      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-      <inertia ixx="0.0171364731454" ixy="0.0" ixz="0.0" iyy="0.0171364731454" iyz="0.0" izz="0.033822"/>
-    </inertial>
   </link>
   <joint name="ee_fixed_joint" type="fixed">
     <parent link="wrist_3_link"/>
